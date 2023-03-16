@@ -1,0 +1,1433 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+.App{
+    background-color: #000000;
+    color: #FFFFFF;
+    background-image:  url('./assets/upper-background.png'), url('./assets/lower-background.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-size: 220vh 125vh, 220vh 150vh;
+}
+
+
+.Location {
+    background: rgba(174, 12, 96, .7);
+    bottom: 3.5rem;
+    position: relative;
+    width: 100%;
+    height: 115px;
+}
+
+
+.Location1{
+    font-size: 15px;
+    display: flex;
+    margin-top: 16.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 6.8rem;
+    background-color: transparent;
+    width: 83rem;
+    height: 100px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.68rem;
+    border: #66347F solid 5px;
+    left: 0.7rem;
+    top: 0.5rem;
+}
+
+.Name{
+    display: grid;
+    position: relative;
+    right: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Type{
+    display: grid;
+    position: relative;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dimension{
+    display: grid;
+    position: relative;
+    left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Population{
+    display: grid;
+    position: relative;
+    left: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo{
+    width: 22rem;
+    position: relative;
+    top: 7rem;
+    left: 4.5rem;
+}
+
+.Input{
+    margin-left: 38rem;
+    position: relative;
+    top: 1.1rem;
+}
+
+.Input button {
+    width: 177px;
+    height: 2.8rem;
+    background: #FEEF66;
+    border: solid #893446;
+    color: #893446;
+    font-size: 20px;
+    border-radius: 2rem;
+    margin-left: -2.1rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+}
+
+.Input input {
+    width: 417px;
+    height: 2.8rem;
+    border-radius: 2rem;
+    font-size: 20px;
+    border: solid #893446;
+}
+
+
+
+
+
+.Resident-Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Resident {
+    margin-top: 160px;
+    border: black solid;
+    width: 450px;
+    height: 320px;
+    font-size: 10px;
+    border-radius: 30px;
+    background-color: #893446;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.Resident img {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    margin-left: 150px;
+    bottom: 275px;
+    border: #893446 solid 6px;
+    border-radius: 50%;
+}
+
+
+.Box2 {
+    width: 425px;
+    height: 109px;
+    border-radius: 24px;
+    background-color: #EDE288;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #893446;
+}
+
+.Box3 {
+    background-color: red;
+    width: 425px;
+    height: 295px;
+    border-radius: 24px;
+    background-color: #856888;
+    margin-top: 10px;
+}
+
+.Text  {
+    display: grid;
+    place-content: center;
+    margin-top: 25px;
+    color: #893446;
+    gap: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 9px;
+}
+
+.Text span{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 110px;
+}
+
+.Box4 {
+    background-color: #C9BEDC;
+    width: 408px;
+    height: 295px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 180px;
+    border-bottom-left-radius: 24px;
+
+}
+
+.loader {
+    background-color: gray;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagination{
+
+    position: relative;
+    margin-top: 10rem;
+    display: grid;
+    place-content: center;
+    gap: 4rem;
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+a{
+    color: red;
+    background-color: yellow;
+    font-family: 'Nunito', sans-serif;
+    border-color: #893446 solid 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3rem;
+    border: 50%;
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+        position: relative;
+        right: 10rem;
+    }
+
+    .Location{
+        width: 355px;
+        position: relative;
+        left: 10.4rem;
+    }
+
+    .Location1{
+        width: 325px;
+        font-size: 4.5px;
+        position: relative;
+
+    }
+
+    .Logo img {
+        width: 200px;
+        position: relative;
+        left: 11rem;
+        top: -2rem;
+    }
+
+    .Name{
+        display: grid;
+        position: relative;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:1.6rem;
+        width: 40px;
+
+    }
+    
+    .Type{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 0.4rem;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        left:0.8rem;
+      
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        position: relative;
+        place-content: center;
+        display: flex;
+        gap: 0.5rem;
+        left:2.1rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 10.3rem;
+        bottom: 3rem;
+    }
+
+    .Resident {
+        margin-top: 160px;
+        border: black solid;
+        width: 340px;
+        height: 320px;
+        font-size: 8px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0.8rem;
+    }
+    
+    
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 100px;
+        bottom: 275px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+    
+    
+    .Box2 {
+        width: 305px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        color: #893446;
+    }
+    
+    .Box3 {
+        width: 305px;
+        height: 295px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 10px;
+    }
+    
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 11px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 290px;
+        height: 295px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        position: relative;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        position: relative;
+        color: blue;
+    }
+
+    .Input{
+        margin-left: 14rem;
+        position: relative;
+        top: 7.1rem;
+    }
+    
+    .Input button {
+        width: 87px;
+        height: 2.3rem;
+        background: #FEEF66;
+        border: solid #893446;
+        color: #893446;
+        font-size: 11px;
+        border-radius: 2rem;
+        margin-left: -2.1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    
+    .Input input {
+        width: 187px;
+        height: 2.3rem;
+        border-radius: 2rem;
+        font-size: 11px;
+        border: solid #893446;
+        
+    }
+
+    .loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader p{
+        bottom: 7rem;
+        position: relative;
+        left: 1rem;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: 5rem;
+        position: relative;
+        left: 8.5rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+}
+
+
+@media screen and (min-width: 321px) {
+
+    .loader {
+        background-color: gray;
+        position: fixed;
+        z-index: 100;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+        position: relative;
+        right: 6rem;
+        width: 90vh;
+    }
+
+    .Location{
+        width: 425px;
+        position: relative;
+        left: 6.4rem;
+    }
+
+    .Location1{
+        width: 405px;
+        font-size: 5px;
+        position: relative;
+
+    }
+
+    .Logo img {
+        width: 270px;
+        height: 100px;
+        position: relative;
+        left: 8rem;
+        top: -2rem;
+    }
+
+    .Name{
+        display: grid;
+        position: relative;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:3.2rem;
+        width: 40px;
+
+    }
+    
+    .Type{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 1.1rem;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        left:2rem;
+      
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        position: relative;
+        place-content: center;
+        display: flex;
+        gap: 0.5rem;
+        left:3.8rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 7.3rem;
+        bottom: 3rem;
+    }
+
+    .Resident {
+        margin-top: 160px;
+        border: black solid;
+        width: 395px;
+        height: 320px;
+        font-size: 8px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0.3rem;
+    }
+    
+    
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 130px;
+        bottom: 275px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+    
+    
+    .Box2 {
+        width: 360px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        color: #893446;
+    }
+    
+    .Box3 {
+        width: 360px;
+        height: 295px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 10px;
+    }
+    
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8.5px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 12.5px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 345px;
+        height: 295px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        position: relative;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        position: relative;
+        color: blue;
+    }
+
+    
+    .Input{
+        margin-left: 13rem;
+        position: relative;
+        top: 8.1rem;
+    }
+    
+    .Input button {
+        width: 87px;
+        height: 2.3rem;
+        background: #FEEF66;
+        border: solid #893446;
+        color: #893446;
+        font-size: 11px;
+        border-radius: 2rem;
+        margin-left: -2.1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    
+    .Input input {
+        width: 187px;
+        height: 2.3rem;
+        border-radius: 2rem;
+        font-size: 11px;
+        border: solid #893446;
+    }
+
+    
+    .loader {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader p{
+        bottom: 5rem;
+        position: relative;
+        left: -2rem;
+        font-size: 35px;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: 2.5rem;
+        position: relative;
+        left: 8rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+    
+}
+
+
+@media screen and (min-width: 577px) {
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+        position: relative;
+        right: 6rem;
+    }
+
+    .Location{
+        width: 405px;
+        position: relative;
+        left: 7rem;
+    }
+
+    .Location1{
+        width: 380px;
+        font-size: 4.3px;
+        position: relative;
+
+    }
+
+    .Logo img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 7rem;
+        top: -4rem;
+    }
+
+    .Name{
+        display: grid;
+        position: relative;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:3.2rem;
+        width: 60px;
+
+    }
+    
+    .Type{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 1.1rem;
+        width: 60px;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        left:2rem;
+      
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        position: relative;
+        place-content: center;
+        display: flex;
+        gap: 0.5rem;
+        left:3.8rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 7.3rem;
+        bottom: 1.54rem;
+    }
+
+    .Resident {
+        margin-top: 140px;
+        border: black solid;
+        width: 395px;
+        height: 320px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 130px;
+        bottom: 275px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+    
+    
+    .Box2 {
+        width: 365px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+        color: #893446;
+        
+    }
+    
+    .Box3 {
+        width: 365px;
+        height: 295px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 10px;
+    }
+    
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 350px;
+        height: 295px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        position: relative;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        position: relative;
+        color: blue;
+    }
+
+        
+    .Input{
+        margin-left: 11.5rem;
+        position: relative;
+        top: 6.1rem;
+    }
+    
+    .Input button {
+        width: 107px;
+        height: 2.3rem;
+        background: #FEEF66;
+        border: solid #893446;
+        color: #893446;
+        font-size: 11px;
+        border-radius: 2rem;
+        margin-left: -2.1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    
+    .Input input {
+        width: 207px;
+        height: 2.3rem;
+        border-radius: 2rem;
+        font-size: 11px;
+        border: solid #893446;
+    }
+
+    .loader {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+    }
+
+    .loader p{
+        bottom: 2rem;
+        position: relative;
+        left: 0rem;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: 0rem;
+        position: relative;
+        left: 8rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+    
+}
+
+@media screen and (min-width: 769px) {
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+        position: relative;
+        right: 6rem;
+    }
+
+    .Location{
+        width: 408px;
+        position: relative;
+        left: 7.1rem;
+    }
+
+    .Location1{
+        width: 385px;
+        font-size: 3.8px;
+        position: relative;
+
+    }
+
+    .Logo img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 6.5rem;
+        top: -6rem;
+    }
+
+    .Name{
+        display: grid;
+        position: relative;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:3.2rem;
+        width: 60px;
+
+    }
+    
+    .Type{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 1.1rem;
+        width: 60px;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        left:2rem;
+      
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        position: relative;
+        place-content: center;
+        display: flex;
+        gap: 0.5rem;
+        left:3.8rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 7.3rem;
+        bottom: 2rem;
+    }
+
+    .Resident {
+        margin-top: 160px;
+        border: black solid;
+        width: 385px;
+        height: 320px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0.6rem;
+    }
+    
+    
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 110px;
+        bottom: 275px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+    
+    
+    .Box2 {
+        width: 355px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #893446;
+        
+    }
+    
+    .Box3 {
+        width: 355px;
+        height: 295px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 10px;
+    }
+    
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 13.5px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 340px;
+        height: 295px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        position: relative;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        position: relative;
+        color: blue;
+    }
+
+    .loader {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+    }
+
+    .loader p{
+        bottom: -1rem;
+        position: relative;
+        left: 2rem;
+        font-size: 30px;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: -3rem;
+        position: relative;
+        left: 11rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+}
+
+
+
+@media screen and (min-width: 992px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .App {
+        position: relative;
+        width: 228vh;
+        right: 1rem;
+        background-color: #000000;
+        color: #FFFFFF;
+        background-image:  url('./assets/upper-background.png'), url('./assets/lower-background.png') ;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom left;
+        background-size: 228vh 125vh, 228vh 150vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .Location{
+        width: 1118px;
+        position: relative;
+        left: 1.8rem;
+        bottom: 13rem;
+    }
+
+    .Location1{
+        width: 1095px;
+        font-size: 7px;
+        position: relative;
+
+    }
+
+    .Logo img {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: -1.5rem;
+        top: -6rem;
+    }
+
+    .Name{
+        display: grid;
+        position: relative;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:15.2rem;
+        width: 120px;
+
+    }
+    
+    .Type{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 5.2rem;
+        width: 60px;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        position: relative;
+        place-content: center;
+        gap: 0.5rem;
+        left:9rem;
+      
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        position: relative;
+        place-content: center;
+        display: flex;
+        gap: 0.5rem;
+        left:19.8rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+        left: -0.2rem;
+        gap: 0.2rem;
+        bottom: 7.5rem;
+    }
+
+    .Resident {
+        margin-top: 160px;
+        border: black solid;
+        width: 385px;
+        height: 320px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0.6rem;
+    }
+    
+    
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 130px;
+        bottom: 285px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+    
+    
+    .Box2 {
+        width: 355px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 13px;
+        color: #893446;
+        
+    }
+    
+    .Box3 {
+        width: 355px;
+        height: 295px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 10px;
+    }
+    
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 340px;
+        height: 295px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        position: relative;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        position: relative;
+        color: blue;
+    }
+
+        
+    .Input{
+        left: 21.5rem;
+        position: relative;
+        top: -5.8rem;
+    }
+    
+    .Input button {
+        width: 137px;
+        height: 2.5rem;
+        background: #FEEF66;
+        border: solid #893446;
+        color: #893446;
+        font-size: 14px;
+        border-radius: 2rem;
+        margin-left: -2.1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    
+    .Input input {
+        width: 387px;
+        height: 2.5rem;
+        border-radius: 2rem;
+        font-size: 15px;
+        border: solid #893446;
+    }
+
+    .loader {
+        width: 100%;
+        height: 100%;
+        background: url(./assets/space.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+        
+    }
+
+    .loader p{
+        bottom: -1rem;
+        position: relative;
+        left: -4rem;
+        font-size: 50px;
+    }
+
+    .spinner{
+        height: 80px;
+        width: 80px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: -5rem;
+        position: relative;
+        left: 11rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+}
+
