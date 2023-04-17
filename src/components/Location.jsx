@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Location = ( {data, set} ) => {
 
-    const [id, setId] = useState("")
+    const [id, setId] = useState(1)
 
     
     const searchById = () => {

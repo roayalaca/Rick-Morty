@@ -495,7 +495,7 @@ a{
         width: 30rem;
         left: 1.7rem;
         position: relative;
-        top: 2rem;
+        top: 0.5rem;
     }
 
     .Location1{
@@ -719,19 +719,21 @@ a{
     .App {
         min-width: 100vh;
         min-height: 100vh;
-        display: grid;
-        place-content: center;
-       
+        
         }
 
     .Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        width: 12rem;
         left: 14rem;
+      
     }
 
     .Logo img{
        width: 22rem;
+
     }
 
     .locContainer{
@@ -949,6 +951,245 @@ a{
         }
       }
     
+}
+
+@media screen and (min-width: 650px) {
+    .Logo{
+        position: relative;
+        left: 16rem;
+    }
+}
+
+@media screen and (min-width: 710px) {
+    .Logo{
+        position: relative;
+        left: 17rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .Logo{
+        position: relative;
+        left: 18.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+       
+    }
+
+    .Logo{
+        position: relative;
+        left: 7rem;
+        width: 35rem;
+        bottom: 2rem;
+    }
+
+    .Logo img{
+        width: 28rem;
+        position: relative;
+        bottom: 2rem;
+    }
+
+   .Input{
+    width: 35rem;
+    margin-left: 19rem;
+    position: relative;
+    top: 10rem;
+   }
+
+   .Input input::placeholder{
+    font-size: 1rem;
+    position: relative;
+    left: 1rem;
+   }
+
+    .Input input{
+        width: 27rem;
+        height: 3.5rem;
+    }
+
+    .Input button{
+        width: 9rem;
+        height: 3.6rem;
+        position: relative;
+        right: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .Location{
+        width: 45rem;
+    }
+
+    .Location1{
+        width: 43.5rem;
+        font-size: 5.5px;
+    }
+
+    .Name{
+        position: relative;
+        left: -10rem;
+    }
+
+    .Type{
+        position: relative;
+        left: -4rem;
+    }
+
+    .Dimension{
+        position: relative;
+        left: 4rem;
+    }
+
+    
+    .Population{
+        position: relative;
+        left: 11rem;
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0rem;
+        margin-left: 2rem;
+    }
+
+    .Resident{
+        width: 20rem;
+    }
+
+    .Resident img{
+        position: absolute;
+        right: 6rem;
+    }
+    
+    .Box3{
+        width: 18rem;
+    }
+
+    .Box2{
+        width: 18rem;
+        font-size: 13px;
+    }
+
+    .Box4{
+        width: 18rem;
+    }
+
+    .Text{
+        font-size: 8px;
+    }
+
+    
+    .loader {
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader p{
+        bottom: 7rem;
+        left: 1rem;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: 5rem;
+        left: 8.5rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .App{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logo{
+        position: relative;
+        left: -18rem;
+    }
+
+    .Logo img{
+        width: 23rem;
+    }
+
+    .Input{
+        position: relative;
+        left: 4rem;
+        top: -0.2rem;
+    }   
+
+    .Location{
+        margin-bottom: 10rem;
+        position: relative;
+        top: 8rem;
+        width: 58rem;
+        height: 10rem;
+    }
+
+    .Location1{
+        width: 56.5rem;
+        height: 8.5rem;
+    }
+
+    .Resident-Container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+        margin-top: -0rem;
+        position: relative;
+        left: -1.5rem;
+    }
+
+    .Resident{
+        width: 17rem;
+    }
+
+    .Resident img{
+        position: absolute;
+        left: -6.5rem;
+    }
+
+    .Box2{
+        width: 15rem;
+        height: 4rem;
+        font-size: 11px;
+    }
+
+    .Box3{
+        width: 15rem;
+        height: 18.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .Box4{
+        width: 15rem;
+        height: 18.5rem;
+    }
 }
 
 
