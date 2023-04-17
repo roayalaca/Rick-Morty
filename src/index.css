@@ -473,6 +473,249 @@ a{
     
 }
 
+@media screen and (min-width: 321px) {
+    .App {
+        min-width: 100vh;
+        min-height: 100vh;
+       
+        }
+
+    .Logo{
+        position: relative;
+        width: 12rem;
+        left: 10rem;
+    }
+
+    .Logo img{
+       width: 17rem;
+    }
+
+  
+    .Location{
+        width: 30rem;
+        left: 1.7rem;
+        position: relative;
+        top: 2rem;
+    }
+
+    .Location1{
+        width: 28.5rem;
+        font-size: 4.5px;
+        position: relative;
+
+    }
+
+    .Name{
+        position: relative;
+        left: -6rem;
+    }
+
+   
+
+    .Input{
+        position: relative;
+        right: 8rem;
+        margin-left: 14rem;
+        top: 12.1rem;
+        width: 407px;
+    }
+
+    .Input button {
+        width: 97px;
+        height: 2.3rem;
+        background: #FEEF66;
+        border: solid #893446;
+        color: #893446;
+        font-size: 11px;
+        border-radius: 2rem;
+        margin-left: -2.1rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+    }
+    
+    .Input input {
+        width: 307px;
+        height: 2.3rem;
+        border-radius: 2rem;
+        font-size: 11px;
+        border: solid #893446;
+        
+    }
+
+    
+
+    .Name{
+        display: grid;
+        right: 0rem;
+        place-content: center;
+        gap: 0.5rem;
+        right:1.6rem;
+        width: 40px;
+
+    }
+    
+    .Type{
+        display: grid;
+        place-content: center;
+        position: relative;
+        gap: 0.5rem;
+        bottom: 0.4rem;
+        right: 2.4rem;
+     
+
+    }
+    
+    .Dimension{
+        display: grid;
+        place-content: center;
+        position: relative;
+        gap: 0.5rem;
+        left:1.8rem;
+        bottom: 0.5rem;
+        width: 45px;
+    }
+    
+    
+    .Population{
+        display: grid;
+        place-content: center;
+        position: relative;
+        display: flex;
+        gap: 0.5rem;
+        left:6.1rem;
+        bottom: 0.4rem;
+     
+    }
+
+    .Resident-Container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    
+    .Resident {
+        margin-top: 160px;
+        border: black solid;
+        width: 440px;
+        height: 320px;
+        font-size: 8px;
+        border-radius: 30px;
+        background-color: #893446;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0.8rem;
+        margin-bottom: 100px;
+    }
+
+    .Resident img {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        margin-left: 150px;
+        bottom: 275px;
+        border: #893446 solid 6px;
+        border-radius: 50%;
+    }
+
+    .Box2 {
+        width: 395px;
+        height: 109px;
+        border-radius: 24px;
+        background-color: #EDE288;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        color: #893446;
+    }
+    
+    .Box3 {
+        width: 395px;
+        height: 285px;
+        border-radius: 24px;
+        background-color: #856888;
+        margin-top: 14px;
+    }
+
+    .Text  {
+        display: grid;
+        place-content: center;
+        margin-top: 25px;
+        color: #893446;
+        gap: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-size: 8px;
+    }
+    
+    .Text span{
+        color: #FFFFFF;
+        font-size: 11px;
+        margin-left: 18px;
+    }
+    
+    .Box4 {
+        background-color: #C9BEDC;
+        width: 395px;
+        height: 285px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 180px;
+        border-bottom-left-radius: 24px;
+    
+    }
+
+    .pagination{
+        font-size: 5px;
+        right: 6rem;
+    }
+
+    a{
+        font-size: 30px;
+        color: blue;
+    }
+
+    .loader {
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/space.jpg);
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        display: grid;
+        place-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .loader p{
+        bottom: 7rem;
+        left: 1rem;
+    }
+
+    .spinner{
+        height: 50px;
+        width: 50px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+        bottom: 5rem;
+        left: 8.5rem;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+}
+
+
 
 
 
