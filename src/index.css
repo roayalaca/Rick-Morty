@@ -1154,7 +1154,37 @@ a{
     .Location1{
         width: 56.5rem;
         height: 8.5rem;
+        font-size: 7px;
     }
+
+    .Name{
+     
+        position: relative;
+        left: -13rem;
+        width: 5rem;
+    }
+
+    .Type{
+       
+        position: relative;
+        left: -5rem;
+        width: 6rem;
+    }
+
+    .Dimension{
+       
+        position: relative;
+        left: 4rem;
+        width: 6rem;
+    }
+
+    .Population{
+        
+        position: relative;
+        left: 14rem;
+        width: 5rem;
+    }
+
 
     .Resident-Container{
         display: grid;
@@ -1190,6 +1220,8 @@ a{
         width: 15rem;
         height: 18.5rem;
     }
+
+   
 }
 
 
