@@ -46,6 +46,7 @@ function App() {
       <div className='Logo'>
         <img src={Logo} alt="" />
       </div>
+      
       <Location
       data = {dataApi}
       set = {setDataApi}/>

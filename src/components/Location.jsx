@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 
+
 const Location = ( {data, set} ) => {
 
     const [id, setId] = useState("")
@@ -16,6 +17,7 @@ const Location = ( {data, set} ) => {
 
     return (
         <div className="locContainer">
+
 
             <div className="Input">
                 <input type="text"
