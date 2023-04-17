@@ -263,6 +263,11 @@ a{
 
     }
 
+    .Name{
+        position: relative;
+        left: -6rem;
+    }
+
    
 
     .Input{
@@ -338,12 +343,13 @@ a{
     }
 
     .Resident-Container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
 
+    
     .Resident {
         margin-top: 160px;
         border: black solid;
@@ -354,11 +360,12 @@ a{
         background-color: #893446;
         display: flex;
         justify-content: center;
+        position: relative;
         left: 0.8rem;
     }
-    
-    
+
     .Resident img {
+        position: absolute;
         width: 110px;
         height: 110px;
         margin-left: 100px;
@@ -366,7 +373,6 @@ a{
         border: #893446 solid 6px;
         border-radius: 50%;
     }
-    
     
     .Box2 {
         width: 305px;
@@ -389,7 +395,7 @@ a{
         background-color: #856888;
         margin-top: 10px;
     }
-    
+
     .Text  {
         display: grid;
         place-content: center;
