@@ -15,7 +15,7 @@ const Location = ( {data, set} ) => {
     }
 
     return (
-        <div>
+        <div className="locContainer">
 
             <div className="Input">
                 <input type="text"
