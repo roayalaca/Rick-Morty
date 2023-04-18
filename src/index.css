@@ -438,21 +438,13 @@ a{
 
     .loader {
         min-width: 100%;
-        height: 100vh;
-        background: url(./assets/320.jpg);
+        min-height: 100%;
+        background: url(./assets/320.png);
         background-size: cover;
-        background-repeat: no-repeat;
         position: fixed;
         top: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .loader p{
-        bottom: 0rem;
-       
+        right: 0rem;
+    
     }
 
     .spinner{
@@ -681,31 +673,24 @@ a{
     }
 
     .loader {
-        width: 105vh;
-        min-height: 160vh;
-        background-image: url(./assets/321.jpg);
-        font-family: 'Nunito', sans-serif;
-        font-size: 35px;
-        background-repeat: no-repeat;
+        min-width: 100%;
+        height: 100%;
+        background: url(./assets/321.jpg);
         background-size: cover;
-        display: grid;
-        place-content: center;
-    }
-
-    .loader p{
-        position: relative;
-        left: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0rem;
+    
     }
 
     .spinner{
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        position: relative;
-        left: -1rem;
+
       }
 
       @keyframes spin {
@@ -921,35 +906,26 @@ a{
         color: blue;
     }
 
+    
     .loader {
-        width: 100%;
+        min-width: 100%;
         height: 100%;
-        background-image: url(./assets/space.jpg);
-        font-family: 'Nunito', sans-serif;
-        font-size: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-repeat: no-repeat;
+        background: url(./assets/576.png);
         background-size: cover;
-    }
-
-    .loader p{
-        position: relative;
-        bottom: 7rem;
-        left: -6rem;
+        position: fixed;
+        top: 0;
+        right: 0rem;
+    
     }
 
     .spinner{
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        position: relative;
-        bottom: 7rem;
-        left: 12.5rem;
+
       }
 
       @keyframes spin {
@@ -1071,36 +1047,25 @@ a{
         font-size: 8px;
     }
 
-    
     .loader {
-        width: 100%;
-        height: 100%;
-        background-image: url(./assets/space.jpg);
-        font-family: 'Nunito', sans-serif;
-        font-size: 0px;
-        display: grid;
-        place-content: center;
-        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 100%;
+        background: url(./assets/768.png);
         background-size: cover;
-        position: relative;
-        top: 0rem;
+        position: fixed;
+        top: 0;
         right: 0rem;
-    }
-
-    .loader p{
-        bottom: 15rem;
-        left: 1rem;
+    
     }
 
     .spinner{
-        height: 50px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        bottom: 5rem;
-        left: 8.5rem;
+
       }
 
       @keyframes spin {
@@ -1231,6 +1196,27 @@ a{
         left: 1rem;
         top: 0rem;
     }
+
+    .loader {
+        min-width: 100%;
+        min-height: 100%;
+        background: url(./assets/992.png);
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        right: 0rem;
+    
+    }
+
+    .spinner{
+        height: 80px;
+        width: 80px;
+        border: 6px solid;
+        border-color: white transparent white transparent;
+        border-radius: 50%;
+        animation: spin 1.3s linear infinite;
+
+      }
 
    
 }
