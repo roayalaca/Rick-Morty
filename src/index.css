@@ -481,10 +481,9 @@ a{
         }
 
     .Logo{
-        width: 12rem;
-        left: -1rem;
         position: relative;
-        top: -6rem;
+        left: 2rem;
+        top: 4rem;
     }
 
     .Logo img{
@@ -511,7 +510,7 @@ a{
     .Input{
         right: 8rem;
         margin-left: 3rem;
-        margin-top: 1rem;
+        margin-top: 10rem;
         width: 387px;
     }
 
@@ -742,7 +741,7 @@ a{
     }
 
     .Location{
-        top: 12rem;
+        top: 7rem;
         margin-right: -1rem;
         width: 33rem;
     }
@@ -759,7 +758,7 @@ a{
         width: 30rem;
         position: relative;
         left: -1rem;
-        top: 7rem;
+        margin-top: 8rem;
     }
 
     .Input button {
@@ -978,8 +977,6 @@ a{
    .Input{
     width: 39rem;
     margin-left: 5rem;
-    position: relative;
-    top: 7rem;
    }
 
    .Input input::placeholder{
@@ -1003,6 +1000,8 @@ a{
 
     .Location{
         width: 45rem;
+        position: relative;
+        top: 5rem;
     }
 
     .Location1{
@@ -1122,7 +1121,7 @@ a{
     .Input{
         position: relative;
         left: 11rem;
-        top: -1.5rem;
+        top: -8rem;
         width: 34rem;
     }   
 
@@ -1131,9 +1130,9 @@ a{
     }
 
     .Location{
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
         position: relative;
-        top: 8rem;
+        top: 2rem;
         width: 58rem;
         height: 10rem;
     }
