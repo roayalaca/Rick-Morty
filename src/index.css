@@ -264,7 +264,7 @@ a{
 
     .Location1{
         width: 15.5rem;
-        font-size: 3.5px;
+        font-size: 3px;
         height: 4rem;
         position: relative;
 
@@ -308,7 +308,7 @@ a{
 
     .Name{
         position: relative;
-        right:2.2rem;
+        right:1.7rem;
         bottom: 0.5rem;
         width: 45px;
         display: grid;
@@ -317,15 +317,18 @@ a{
     
     .Type{
        position: relative;
+       display: grid;
+       place-content: center;
         bottom: 0.5rem;
-        right: 1.4rem;
+        right: 1rem;
+        width: 2rem;
      
 
     }
     
     .Dimension{
         position: relative;
-        left:0.5rem;
+        left:0.9rem;
         bottom: 0.5rem;
         width: 50px;
         display: grid;
@@ -336,7 +339,7 @@ a{
     .Population{
         position: relative;
         gap: 0.5rem;
-        left: 1.6rem;
+        left: 2rem;
         bottom: 0.2rem;
      
     }
@@ -434,31 +437,31 @@ a{
     }
 
     .loader {
-        min-width: 50vh;
+        width: 57vh;
         min-height: 100vh;
-        background-image: url(./assets/space.jpg);
+        background-image: url(./assets/320.jpg);
         font-family: 'Nunito', sans-serif;
         font-size: 25px;
-        display: grid;
-        place-content: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .loader p{
-        bottom: 7rem;
+        bottom: 0rem;
+        position: relative;
         left: 1rem;
     }
 
     .spinner{
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        bottom: 5rem;
-        left: 8.5rem;
+        position: relative;
+        bottom: 1rem;
+        left:0.5rem;
       }
 
       @keyframes spin {
@@ -482,12 +485,12 @@ a{
 
     .Logo{
         position: relative;
-        left: 2rem;
+        left: 0rem;
         top: 4rem;
     }
 
     .Logo img{
-       width: 17rem;
+       width:24rem;
     }
 
   
@@ -557,6 +560,7 @@ a{
         gap: 0.5rem;
         bottom: 0.4rem;
         right: 2.4rem;
+        width: 3.5rem;
      
 
     }
@@ -676,31 +680,31 @@ a{
     }
 
     .loader {
-        width: 100%;
-        height: 100%;
+        width: 105vh;
+        min-height: 160vh;
         background-image: url(./assets/space.jpg);
         font-family: 'Nunito', sans-serif;
-        font-size: 25px;
-        display: grid;
-        place-content: center;
+        font-size: 35px;
         background-repeat: no-repeat;
         background-size: cover;
+        display: grid;
+        place-content: center;
     }
 
     .loader p{
-        bottom: 7rem;
+        position: relative;
         left: 1rem;
     }
 
     .spinner{
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        bottom: 5rem;
-        left: 8.5rem;
+        position: relative;
+        left: -1rem;
       }
 
       @keyframes spin {
@@ -921,27 +925,30 @@ a{
         height: 100%;
         background-image: url(./assets/space.jpg);
         font-family: 'Nunito', sans-serif;
-        font-size: 25px;
-        display: grid;
-        place-content: center;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .loader p{
+        position: relative;
         bottom: 7rem;
-        left: 1rem;
+        left: -6rem;
     }
 
     .spinner{
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
         border: 6px solid;
         border-color: white transparent white transparent;
         border-radius: 50%;
         animation: spin 1.3s linear infinite;
-        bottom: 5rem;
-        left: 8.5rem;
+        position: relative;
+        bottom: 7rem;
+        left: 12.5rem;
       }
 
       @keyframes spin {
@@ -1069,15 +1076,18 @@ a{
         height: 100%;
         background-image: url(./assets/space.jpg);
         font-family: 'Nunito', sans-serif;
-        font-size: 25px;
+        font-size: 0px;
         display: grid;
         place-content: center;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        top: 0rem;
+        right: 0rem;
     }
 
     .loader p{
-        bottom: 7rem;
+        bottom: 15rem;
         left: 1rem;
     }
 

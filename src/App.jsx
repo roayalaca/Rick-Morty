@@ -23,7 +23,7 @@ function App() {
         setDataApi(resp.data)
         setTimeout( () => {
           setLoader(false)
-        }, 1500)
+        }, 5500)
           
       })
       .catch(error => console.error(error))
