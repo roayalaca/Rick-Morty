@@ -478,13 +478,13 @@ a{
         width: 62vh;
        position: relative;
        right: 7.5rem;
-       top: 2rem;
+       top: 4rem;
     }
 
     .Logo{
         position: relative;
         left: -6rem;
-        top: 0rem;
+        top: 3rem;
     }
 
     .Logo img{
@@ -493,15 +493,15 @@ a{
 
   
     .Location{
-        width: 25rem;
+        width: 22rem;
         position: relative;
-        left: 0.5rem;
+        left: 2rem;
         bottom: 10rem;
 
     }
 
     .Location1{
-        width: 24rem;
+        width: 20rem;
         font-size: 4.5px;
         position: relative;
 
@@ -511,12 +511,12 @@ a{
 
     .Input{
         position: relative;
-        right: 37rem;
+        right: 34.5rem;
         width: 387px;
     }
 
     .Input button {
-        width: 97px;
+        width: 87px;
         height: 2.3rem;
         background: #FEEF66;
         border: solid #893446;
@@ -529,7 +529,7 @@ a{
     }
     
     .Input input {
-        width: 307px;
+        width: 247px;
         height: 2.3rem;
         border-radius: 2rem;
         font-size: 11px;
@@ -545,7 +545,7 @@ a{
         place-content: center;
         gap: 0.5rem;
         position: relative;
-        right:6.6rem;
+        right:3.6rem;
         width: 40px;
         bottom: 0.5rem;
 
@@ -580,7 +580,7 @@ a{
         position: relative;
         display: flex;
         gap: 0.5rem;
-        left:6.1rem;
+        left:3.1rem;
         bottom: 0.4rem;
      
     }
@@ -590,13 +590,16 @@ a{
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       position: relative;
+       right: 8rem;
+       top: 4rem;
     }
 
     
     .Resident {
         margin-top: -30px;
         border: black solid;
-        width: 440px;
+        width: 350px;
         height: 320px;
         font-size: 8px;
         border-radius: 30px;
@@ -619,7 +622,7 @@ a{
     }
 
     .Box2 {
-        width: 395px;
+        width: 350px;
         height: 109px;
         border-radius: 24px;
         background-color: #EDE288;
@@ -633,7 +636,7 @@ a{
     }
     
     .Box3 {
-        width: 395px;
+        width: 350px;
         height: 285px;
         border-radius: 24px;
         background-color: #856888;
@@ -658,7 +661,7 @@ a{
     
     .Box4 {
         background-color: #C9BEDC;
-        width: 395px;
+        width: 350px;
         height: 285px;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
