@@ -343,8 +343,10 @@ a{
     }
 
     .Resident-Container{
-     display: flex;
-     flex-direction: column;
+     display: grid;
+     place-content: center;
+     grid-template-columns: 1fr;
+     gap: 0rem;
     }
 
     
@@ -584,10 +586,10 @@ a{
     }
 
     .Resident-Container{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+       display: grid;
+       place-content: center;
+       grid-template-columns: 1fr;
+       gap: 2rem;
        position: relative;
        right: 3xrem;
        top: 10rem;
@@ -709,57 +711,61 @@ a{
 }
 
 @media screen and (min-width: 576px) {
+
+    
     .App {
-        min-width: 100vh;
-        min-height: 100vh;
-        
+        min-width: 576px;
+        min-height: 170vh;
+        display: grid;
+        place-content: center;
+       
         }
 
+    .locContainer{
+        width: 30rem;
+        height: 18rem;
+       
+    }
+
     .Logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
-        left: 1rem;
-        top: 4rem;
-      
+        left: 5.5rem;
+        top: 7rem;
+        width: 17rem;
+       
     }
 
     .Logo img{
-       width: 22rem;
-
+       width:21rem;
     }
 
-    .locContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+  
     .Location{
-        top: 7rem;
-        margin-right: -1rem;
-        width: 33rem;
+        width: 32rem;
+        position: relative;
+        left: -0.9rem;
+        bottom: 0rem;
+
     }
 
     .Location1{
+        width: 30.5rem;
+        font-size: 6px;
         position: relative;
-        top: -16rem;
-        width: 31.5rem;
+
     }
-   
+
    
 
     .Input{
-        width: 30rem;
         position: relative;
-        left: -1rem;
-        margin-top: 8rem;
+        right: 36.5rem;
+        width: 447px;
+        top: 12rem;
     }
 
     .Input button {
-        width: 7.5rem;
+        width: 117px;
         height: 2.8rem;
         background: #FEEF66;
         border: solid #893446;
@@ -770,7 +776,7 @@ a{
     }
     
     .Input input {
-        width: 24rem;
+        width: 357px;
         height: 2.8rem;
         border-radius: 2rem;
         font-size: 11px;
@@ -778,12 +784,15 @@ a{
         
     }
 
+    
 
     .Name{
         display: grid;
+        right: 0rem;
         place-content: center;
         gap: 0.5rem;
-        left: -8rem;
+        position: relative;
+        right:4.6rem;
         width: 40px;
         bottom: 0.5rem;
 
@@ -795,7 +804,8 @@ a{
         position: relative;
         gap: 0.5rem;
         bottom: 0.4rem;
-        right: 3.5rem;
+        right: 0.4rem;
+        width: 3.5rem;
      
 
     }
@@ -805,7 +815,7 @@ a{
         place-content: center;
         position: relative;
         gap: 0.5rem;
-        left:2.3rem;
+        left:3.8rem;
         bottom: 0.5rem;
         width: 45px;
     }
@@ -817,25 +827,27 @@ a{
         position: relative;
         display: flex;
         gap: 0.5rem;
-        left:7.8rem;
+        left:7.6rem;
         bottom: 0.4rem;
      
     }
 
     .Resident-Container{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-top: 13rem;
+       display: grid;
+       place-content: center;
+       grid-template-columns: 1fr;
+       gap: 5rem;
+       top: 20rem;
+       margin-bottom: 28rem;
+       width: 30rem;
     }
 
     
     .Resident {
-        margin-top: 160px;
+        margin-top: -30px;
         border: black solid;
-        width: 510px;
-        height: 340px;
+        width: 30rem;
+        height: 23rem;
         font-size: 8px;
         border-radius: 30px;
         background-color: #893446;
@@ -843,19 +855,21 @@ a{
         justify-content: center;
         left: 0.8rem;
         margin-bottom: 100px;
+        position: relative;
     }
 
     .Resident img {
-        width: 120px;
-        height: 120px;
-        margin-left: 180px;
-        bottom: 290px;
+        width: 140px;
+        position: absolute;
+        right: 11rem;
+        height: 140px;
+        bottom: 325px;
         border: #893446 solid 6px;
         border-radius: 50%;
     }
 
     .Box2 {
-        width: 465px;
+        width: 28rem;
         height: 109px;
         border-radius: 24px;
         background-color: #EDE288;
@@ -869,11 +883,11 @@ a{
     }
     
     .Box3 {
-        width: 465px;
-        height: 290px;
+        width: 28rem;
+        height: 20.5rem;
         border-radius: 24px;
         background-color: #856888;
-        margin-top: 23px;
+        margin-top: 14px;
     }
 
     .Text  {
@@ -883,19 +897,19 @@ a{
         color: #893446;
         gap: 1rem;
         font-family: 'Nunito', sans-serif;
-        font-size: 9px;
+        font-size: 11px;
     }
     
     .Text span{
         color: #FFFFFF;
-        font-size: 13px;
+        font-size: 15px;
         margin-left: 18px;
     }
     
     .Box4 {
         background-color: #C9BEDC;
-        width: 450px;
-        height: 288px;
+        width: 28rem;
+        height: 20.5rem;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
         border-bottom-right-radius: 180px;
@@ -913,7 +927,6 @@ a{
         color: blue;
     }
 
-    
     .loader {
         min-width: 100%;
         height: 100%;
@@ -942,7 +955,6 @@ a{
       }
     
 }
-
 
 
 @media screen and (min-width: 768px) {
