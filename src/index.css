@@ -467,23 +467,23 @@ a{
     .App {
         min-width: 321px;
         min-height: 170vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        display: grid;
+        place-content: center;
        
         }
 
     .locContainer{
         width: 20rem;
+        height: 18rem;
        
     }
 
     .Logo{
         position: relative;
-        left: 1rem;
+        left: 2rem;
         top: 3rem;
         width: 17rem;
+       
     }
 
     .Logo img{
@@ -495,7 +495,7 @@ a{
         width: 19rem;
         position: relative;
         left: 0.9rem;
-        bottom: 10rem;
+        bottom: 8rem;
 
     }
 
@@ -512,6 +512,7 @@ a{
         position: relative;
         right: 37.5rem;
         width: 307px;
+        top: 4rem;
     }
 
     .Input button {
@@ -589,7 +590,8 @@ a{
        align-items: center;
        position: relative;
        right: 3xrem;
-       top: 0rem;
+       top: 10rem;
+       margin-bottom: 12rem;
     }
 
     
@@ -611,15 +613,15 @@ a{
     .Resident img {
         width: 110px;
         position: absolute;
+        right: 5rem;
         height: 110px;
-        margin-left: 150px;
         bottom: 275px;
         border: #893446 solid 6px;
         border-radius: 50%;
     }
 
     .Box2 {
-        width: 280px;
+        width: 250px;
         height: 109px;
         border-radius: 24px;
         background-color: #EDE288;
@@ -633,7 +635,7 @@ a{
     }
     
     .Box3 {
-        width: 280px;
+        width: 250px;
         height: 285px;
         border-radius: 24px;
         background-color: #856888;
@@ -658,7 +660,7 @@ a{
     
     .Box4 {
         background-color: #C9BEDC;
-        width: 280px;
+        width: 250px;
         height: 285px;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
