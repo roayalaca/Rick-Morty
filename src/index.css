@@ -474,9 +474,17 @@ a{
        
         }
 
+    .locContainer{
+        width: 62vh;
+       position: relative;
+       right: 7.5rem;
+       top: 2rem;
+    }
+
     .Logo{
-        margin-right: 9rem;
-        margin-top: 6rem;
+        position: relative;
+        left: -6rem;
+        top: 0rem;
     }
 
     .Logo img{
@@ -485,14 +493,15 @@ a{
 
   
     .Location{
-        width: 30rem;
+        width: 25rem;
         position: relative;
+        left: 0.5rem;
         bottom: 10rem;
 
     }
 
     .Location1{
-        width: 28.5rem;
+        width: 24rem;
         font-size: 4.5px;
         position: relative;
 
@@ -501,9 +510,8 @@ a{
    
 
     .Input{
-        right: 8rem;
-        margin-left: 3rem;
-        margin-top: 10rem;
+        position: relative;
+        right: 37rem;
         width: 387px;
     }
 
